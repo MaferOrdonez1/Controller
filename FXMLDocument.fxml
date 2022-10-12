@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sieteymedio.FXMLDocumentController">
+   <children>
+      <Label fx:id="LabelJugadores" layoutX="110.0" layoutY="501.0" text="2" />
+      <Label layoutX="36.0" layoutY="501.0" prefHeight="17.0" prefWidth="88.0" text="JUGADORES" />
+      <MenuBar fx:id="Menuitem" layoutY="2.0">
+        <menus>
+          <Menu fx:id="ItemMenuFichero" mnemonicParsing="false" onAction="#Tomarelmenufichero" text="Fichero">
+            <items>
+                  <MenuItem fx:id="MenuIitemIniciar" mnemonicParsing="false" onAction="#IniciarPartida" text="Iniciar" />
+                  <MenuItem fx:id="MenuIitemTerminar" mnemonicParsing="false" onAction="#TerminarPartida" text="Terminar" />
+              <MenuItem fx:id="MenuIitemCerrar" mnemonicParsing="false" onAction="#CerrarPartida" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu fx:id="ItemConfiguracion" mnemonicParsing="false" onAction="#TomarConfiguracion" text="Configuracion">
+            <items>
+                  <RadioMenuItem fx:id="MenuIitemJugadorDos" mnemonicParsing="false" onAction="#TomarJugadores" text="2 jugadores" />
+                  <RadioMenuItem fx:id="MenuIitemJugadorTres" mnemonicParsing="false" onAction="#TomarJugadores" text="3 jugadores" />
+                  <RadioMenuItem fx:id="MenuIitemJugadorCuatro" mnemonicParsing="false" onAction="#TomarJugadores" text="4 jugadores" />
+            </items>
+          </Menu>
+          <Menu fx:id="Menuitem" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox layoutX="36.0" layoutY="50.0" prefHeight="385.0" prefWidth="663.0">
+         <children>
+            <VBox prefHeight="385.0" prefWidth="139.0">
+               <children>
+                  <Label fx:id="LabelJugador1" prefHeight="17.0" prefWidth="131.0" text="JUGADOR 1" />
+                  <Button fx:id="BotonPedirCartas" mnemonicParsing="false" onAction="#TomarPedirCartas" prefHeight="26.0" prefWidth="142.0" text="Pedir Cartas" />
+                  <Button fx:id="BotonPlantearse1" mnemonicParsing="false" onAction="#TomarPlantearse" prefHeight="28.0" prefWidth="151.0" text="Plantearse" />
+                  <Label fx:id="BotonPuntos1" text="0" />
+                  <TextArea fx:id="TextAreaJugador1" editable="false" prefHeight="329.0" prefWidth="131.0" />
+               </children>
+            </VBox>
+            <HBox prefHeight="385.0" prefWidth="44.0" />
+            <VBox prefHeight="385.0" prefWidth="140.0">
+               <children>
+                  <Label fx:id="LabelJugador1" prefHeight="17.0" prefWidth="131.0" text="JUGADOR 2" />
+                  <Button fx:id="BotonPedirCartas2" mnemonicParsing="false" onAction="#TomarPedirCartas" prefHeight="26.0" prefWidth="142.0" text="Pedir Cartas" />
+                  <Button fx:id="BotonPlantearse2" mnemonicParsing="false" onAction="#TomarPlantearse" prefHeight="28.0" prefWidth="151.0" text="Plantearse" />
+                  <Label fx:id="BotonPuntos2" text="0" />
+                  <TextArea fx:id="TextAreaJugador2" editable="false" prefHeight="329.0" prefWidth="131.0" />
+               </children>
+            </VBox>
+            <HBox prefHeight="385.0" prefWidth="40.0" />
+            <VBox prefHeight="385.0" prefWidth="140.0">
+               <children>
+                  <Label fx:id="LabelJugador1" prefHeight="17.0" prefWidth="131.0" text="JUGADOR 3" />
+                  <Button fx:id="BotonPedirCartas3" mnemonicParsing="false" onAction="#TomarPedirCartas" prefHeight="26.0" prefWidth="142.0" text="Pedir Cartas" />
+                  <Button fx:id="BotonPlantearse3" mnemonicParsing="false" onAction="#TomarPlantearse" prefHeight="28.0" prefWidth="151.0" text="Plantearse" />
+                  <Label fx:id="BotonPuntos3" text="0" />
+                  <TextArea fx:id="TextAreaJugador3" editable="false" prefHeight="412.0" prefWidth="140.0" />
+               </children>
+            </VBox>
+            <HBox prefHeight="385.0" prefWidth="44.0" />
+            <VBox prefHeight="132.0" prefWidth="140.0">
+               <children>
+                  <Label fx:id="LabelJugador1111" prefHeight="17.0" prefWidth="131.0" text="JUGADOR 4" />
+                  <Button fx:id="BotonPedirCartas4" mnemonicParsing="false" onAction="#TomarPedirCartas" prefHeight="26.0" prefWidth="142.0" text="Pedir Cartas" />
+                  <Button fx:id="BotonPlantearse4" mnemonicParsing="false" onAction="#TomarPlantearse" prefHeight="28.0" prefWidth="151.0" text="Plantearse" />
+                  <Label fx:id="BotonPuntos4" text="0" />
+                  <TextArea fx:id="TextAreaJugador4" editable="false" prefHeight="300.0" prefWidth="157.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
